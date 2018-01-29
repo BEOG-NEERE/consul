@@ -68,4 +68,14 @@ feature "Welcome screen" do
     expect(page).to have_current_path(root_path)
   end
 
+  scenario 'is not shown to a regular user if the verification its overrided' do
+    user = create(:user)
+
+    Setting["feature.user.override_verification"] = 'active'
+
+    login_through_form_as(user)
+
+    expect(page).to have_current_path(root_path)
+  end
+
 end

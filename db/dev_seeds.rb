@@ -55,7 +55,7 @@ section "Creating Settings" do
   Setting.create(key: 'feature.allow_images', value: "true")
   Setting.create(key: 'feature.public_stats', value: "true")
   Setting.create(key: 'feature.guides', value: nil)
-  Setting.create(key: 'feature.user.override_verification', value: "false")
+  Setting.create(key: 'feature.user.override_verification', value: nil)
 
   Setting.create(key: 'per_page_code_head', value: "")
   Setting.create(key: 'per_page_code_body', value: "")
