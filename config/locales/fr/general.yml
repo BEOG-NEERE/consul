@@ -485,6 +485,10 @@ fr:
         hot_score: Plus active
         most_commented: Plus commentée
         relevance: Pertinence
+        recommendations: Recomendations
+      recommendations:
+        without_results: Il n'y a pas de débat lié à vos intérêts
+        without_interests: Suivez les propositions pour que nous puissions vous donner des recommandations
       search_form:
         button: Rechercher
         placeholder: Rechercher des débats...
@@ -495,6 +499,18 @@ fr:
       select_order: Trier par
       start_debate: Commencer un débat
       title: Débats
+      section_header:
+        icon_alt: Icon de Débats
+        title: Débats
+        help: Aide sur les débats
+      section_footer:
+        title: Aide sur les débats
+        description: Commencez une discussion pour partager vos points de vue avec d'autres personnes sur les problèmes qui vous concernent.
+        help_text_1: "L'espace des débats citoyens vise à permettre à chacun de présenter des sujets qui le concernent et à propos desquels il souhaite partager des points de vue avec d'autres personnes."
+        help_text_2: "Pour ouvrir un débat, vous devez vous inscrire dans %{org}. Les utilisateurs enregistrés peuvent également commenter les débats ouverts et les noter avec les boutons «J'adhère» ou «Je ne suis pas d'accord»."
+        help_text_3: "Gardez à l'esprit qu'un débat n'active aucun mécanisme d'action spécifique. Si vous voulez faire un %{proposal} pour la ville ou proposer un projet %{budget} quand l'appel s'ouvre, allez à la section correspondante."
+        proposals_link: proposition
+        budget_link: budgets participatifs
     new:
       form:
         submit_button: Commencer un débat
@@ -850,47 +866,57 @@ fr:
       consul: Application Consul
       consul_url: https://github.com/consul/consul
       contact_us: Pour l'assistance technique entrer
-      copyright: Consul, %{year}
+      copyright: Citoyen 2.0, %{year}
       description: Ce portail utiliser %{consul} qui est %{open_source}. De Madrid
         ouvert sur le monde.
       faq: assistance technique
-      open_data_text: Tout les détails de la Mairie sont vôtre pour accès
+      open_data_text: "Accedez au portail des données ouvertes du Burkina Faso"
       open_data_title: Open data
       open_source: logiciel libre
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Modelez la ville de Madrid dans laquelle vous souhaitez
-        vivre
+      participation_text: Modelez le Burkina Faso dans lequel vous souhaitez vivre
       participation_title: Participation
       privacy: Vie privée
-      transparency_text: Trouver tout à propos de la mairie de Madrid
+      transparency_text: Trouver tout à propos du Burkina Faso
       transparency_title: Transparence
       transparency_url: https://transparency.consul
     header:
+      administration_menu: Admin
       administration: Administration
+      available_locales: Langues disponibles
+      collaborative_legislation: Processus législatifs
       debates: Débats
       external_link_blog: Blog
       external_link_opendata: Open data
+      external_link_opendata_url: http://data.gov.bf
       external_link_transparency: Transparence
       external_link_transparency_url: https://transparency.consul
       locale: 'Langue :'
       logo: Consul logo
       moderation: Modération
+      management: Gestion
+      valuation: Evaluation
       more_info: Plus d'information
       my_account_link: Mon compte
       my_activity_link: Mon activité
+      officing: Présidents de séances
+      help: Aide
+      notifications: Notifications
       new_notifications:
         one: Vous avez une nouvelle notification
         other: Vous avez %{count} nouvelles notifications
       no_notifications: Vous n'avez pas de nouvelles notifications
       open: ouvert
-      open_city_slogan_html: Il y a des villes gouvernées directement par leurs habitants
+      open_city_slogan_html: "Il y a des communes gouvernées directement par leurs habitants
         qui discutent des sujets dont il se sentent concernées, proposent des idées
-        pour améliorer leurs vies et décider lesquelles seront mises en place. Madrid
-        est déjà une de ces villes.
-      open_city_title: Aimez la ville, et elle deviendra la ville que vous aimez
+        pour améliorer leurs vies et décider lesquelles seront mises en place. BEOG NEERE se propose 
+        de contribuer à ce que votre commune soit l'une d'entre elle et partant, tout le Burkina Faso."
+      open_city_title: Aimez le pays, et il deviendra le pays que vous aimez
       open_data: Open data
       open_gov: Gouvernement ouvert
       proposals: Propositions
+      poll_questions: Votes
+      budgets: Budgets participatifs
       spending_proposals: Propositions de dépense
   locale: Français
   mailers:
@@ -1245,7 +1271,22 @@ fr:
       form:
         submit_button: Sauvegarder les changements
       show_link: Voir les propositions
+    retire_form:
+      title: Retirer la proposition
+      warning: "Si vous continuez, votre proposition peut continuer à recevoir de l'aide, mais ne figurera plus dans la liste principale, et un message apparaîtra pour tous les utilisateurs les informant que l'auteur estime que cette proposition ne devrait pas continuer à recueillir du soutien."
+      retired_reason_label: Raison pour laquelle la proposition est retirée
+      retired_reason_blank: Sélectionnez une option
+      retired_explanation_label: Explication
+      retired_explanation_placeholder: Expliquez brièvement pourquoi vous considérez que cette proposition ne devrait pas recueillir plus de soutien
+      submit_button: Retirer la proposition
+    retire_options:
+      duplicated: Doublon
+      started: En exécussion
+      unfeasible: Inviable
+      done: Realisée
+      other: Autre
     form:
+      geozone: Champ d'action
       proposal_external_url: Lien vers de la documentation complémentaire
       proposal_question: Question proposée
       proposal_question_example_html: 'Doit être résumé par une question appelant
@@ -1277,6 +1318,8 @@ fr:
         hot_score: la plus active
         most_commented: la plus commentée
         relevance: pertinence
+        archival_date: Archives
+        recommendations: Recomendations
       search_form:
         button: Chercher
         placeholder: Chercher des propositions
@@ -1288,6 +1331,16 @@ fr:
       select_order_long: Vous êtes en train de voir les propositions en fonction de
       start_proposal: Créer une proposition
       title: Propositions
+      section_header:
+        icon_alt: Icon de proposition
+        title: Propositions
+        help: Aide sur les propositions
+      section_footer:
+        title: Aide sur les propositions
+        description: Faites une proposition citoyenne. Si vous obtenez suffisamment de soutien et que vous votez, vous pouvez demander à tous les habitants de décider comment ils veulent que notre pays soit.
+        help_text_1: "Les propositions citoyennes sont une opportunité pour les résidents et les groupes de décider directement de la façon dont ils veulent que leur ville soit. Toute personne peut faire une proposition sur un sujet qui l'intéresse ou s'inquiéter pour que les autorités l'exécute, après avoir obtenu suffisamment de soutien et après avoir été soumis à un vote citoyen."
+        help_text_2: "Pour créer une proposition, vous devez vous inscrire dans %{org}. Les propositions qui obtiennent le soutien de 1% des internautes, passeront au votes. Pour soutenir les propositions, il est nécessaire d'avoir un compte vérifié."
+        help_text_3: "Un vote citoyen est appelé lorsque les propositions obtiennent le soutien nécessaire. Une fois célébré, s'il y a plus de gens en faveur que contre, le Consistoire assume la proposition et l'exécute."
     new:
       form:
         submit_button: Créer la proposition
@@ -1324,7 +1377,20 @@ fr:
       comments:
         one: 1 commentaire
         other: "%{count} commentaires"
-        zero: No comments
+        zero: Zéro commentaire
+      comments_tab: Commentaires
+      edit_proposal_link: Éditer la proposition
+      notifications_tab: Notifications
+      retired_warning: "L'auteur de cette proposition considère qu'il ne devrait plus continuer à collecter du soutien."
+      retired_warning_link_to_explanation: "Passez en revue votre explication avant d'appuyer."
+      retired: Proposition retirée par l'auteur
+      share: Partager
+      send_notification: Envoyer une notification
+      no_notifications: "Cette proposition n'a pas de notifications."
+      embed_video_title: "Video de %{proposal}"
+      title_external_url: "Documentation additionnelle"
+      title_video_url: "Video externe"
+      author: Auteur
       edit_proposal_link: Modifier
       flag: Cette proposition a été signalée comme inappropriée par plusieurs utilisateurs
       login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.
@@ -1353,6 +1419,12 @@ fr:
     votes_for_proposal_success: Nombre de votes nécessaires pour l'approbation d'une
       proposition
   shared:
+    edit: 'Éditer'
+    save: 'Sauvegarder'
+    delete: 'Supprimer'
+    "yes": "Oui"
+    "no": "Non"
+    back: Retour
     advanced_search:
       author_type: Par catégorie d'auteur
       author_type_blank: Sélectionner une catégorie
@@ -1384,6 +1456,7 @@ fr:
       districts: Secteurs
       tags: Tendance
     unflag: Désignaler
+    more_info: En savoir plus
   social:
     blog: Blog
     facebook: Facebook
@@ -1642,3 +1715,91 @@ fr:
       user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur
         le recensement de Madrid"
       user_permission_votes: Participer au vote final
+  related_content:
+    title: "Contenu connexe"
+    add: "Añadir contenido relacionado"
+    label: "Ajouter un contenu connexe"
+    placeholder: "%{url}"
+    help: "Vous pouvez entrer n'importe quel lien de %{models} dans %{org}."
+    submit: "Ajouter"
+    error: "Lien invalide. Veuillez commencer par %{url}."
+    error_itself: "Lien invalide. Vous ne pouvez pas associer un contenu à lui-même."
+    success: "Vous avez ajouté un nouveau contenu connexe"
+    is_related: "Est-ce un contenu connexe?"
+    score_positive: "Oui"
+    score_negative: "Non"
+    content_title:
+      proposal: "Proposition"
+      debate: "Débat"
+      budget_investment: "Projet de dépenses"
+  polls:
+    all: "Tout"
+    no_dates: "sin fecha asignada"
+    dates: "Desde el %{open_at} hasta el %{closed_at}"
+    final_date: "Recuento final/Resultados"
+    index:
+      filters:
+        current: "Ouverts"
+        incoming: "À venir"
+        expired: "Clos"
+      title: "Votes"
+      participate_button: "Participer au vote"
+      participate_button_incoming: "Plus d'informations"
+      participate_button_expired: "Vote clos"
+      no_geozone_restricted: "Toute le pays"
+      geozone_restricted: "Commune"
+      geozone_info: 'Les personnes inscrites peuvent participer à: '
+      already_answer: "Vous avez déjà participé à ce vote"
+      section_header:
+        icon_alt: Icon de Votes
+        title: Votes
+        help: Aide sur les votes
+      section_footer:
+        title: Aide sur les votes
+        description: Inscrivez-vous pour pouvoir voter sur les propositions citoyennes et les questions que vos concitoyens posent au autorités. Donner forme directement aux décisions de la nation.
+        help_text_1: "Le vote est appelé quand une proposition citoyenne atteint 1% des soutiens du recensement avec droit de vote.  Le vote peut également inclure des questions que le nous soumettons à la décision directe du public."
+        help_text_2: "Pour participer au vote suivant, vous devez vous inscrire dans %{org} et vérifier votre compte. Toutes les personnes inscrites de plus de 16 ans peuvent voter. Les résultats de tous les votes seront pris en compte dans nos propositions au gouvernement."
+    show:
+      already_voted_in_booth: "Vous avez déjà participé à ce scrutin en personne, vous ne pouvez plus participer."
+      already_voted_in_web: "Vous avez déjà participé à ce vote. Si vous votez à nouveau, votre résultat précédent sera écrasé."
+      back: Retour au votes
+      cant_answer_not_logged_in: "Vous devez %{signin} ou %{signup} pour participer."
+      comments_tab: Commentaires
+      login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.
+      signin: se connecter
+      signup: créer son compte
+      cant_answer_verify_html: "Veuillez %{verify_link} pour pouvoir répondre."
+      verify_link: "vérifier votre compte"
+      cant_answer_incoming: "Ce vote n'a pas encore commencé."
+      cant_answer_expired: "Ce vote est clos."
+      cant_answer_wrong_geozone: "Ce vote n'est pas disponible dans votre zone"
+      more_info_title: "Plus d'informations"
+      documents: Documentation
+      zoom_plus: "Agrandir l'image"
+      read_more: "En savoir plus sur %{answer}"
+      read_less: "Lire moins sur %{answer}"
+      participate_in_other_polls: "Participer à d'autres votes"
+      videos: "Video externe"
+      info_menu: "Informations"
+      stats_menu: "Statistiques de participation"
+      results_menu: "Resultats du vote"
+      stats:
+        title: "Données sur la participation"
+        total_participation: "Participation totale"
+        total_votes: "Nombre total de votes"
+        votes: "VOTES"
+        web: "WEB"
+        booth: "URNES"
+        total: "TOTAL"
+        valid: "Valides"
+        white: "Blanc"
+        null_votes: "Nul"
+      results:
+        title: "Questions"
+        most_voted_answer: 'La plupart ont voté réponse: '
+  poll_questions:
+    create_question: "Créer une question"
+    show:
+      vote_answer: "Voter %{answer}"
+      voted: "Vous avez voté %{answer}"
+      voted_token: "Vous pouvez sauvegarder cet identifiant de vote, pour vérifier votre vote dans le résultat final:"

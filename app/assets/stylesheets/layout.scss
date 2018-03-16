@@ -734,8 +734,8 @@ footer {
 }
 
 .footer {
-  background: $border;
-  border-top: 6px solid $brand;
+  background: $brand;
+  border-top: 6px solid $rouge;
   margin-top: $line-height * 2;
   padding-top: $line-height;
 }
@@ -1533,7 +1533,7 @@ table {
     text-decoration: none;
 
     &:hover {
-      color: $brand;
+      color: $rouge;
     }
   }
 }

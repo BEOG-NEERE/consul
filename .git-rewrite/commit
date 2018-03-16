@@ -1,0 +1,6 @@
+tree ba25cbe12d233c0cc76defcec10f726c167b8107
+parent 1770dfd3f6e749ccb7eebfcd035b8783110631d3
+author kikito <kikito@gmail.com> 1440685936 +0200
+committer kikito <kikito@gmail.com> 1440685936 +0200
+
+remove duplicated migration

@@ -1,0 +1,127 @@
+fr:
+  legislation:
+    annotations:
+      comments:
+        see_all: Afficher tous
+        see_complete: Afficher tous
+        comments_count:
+          one: "%{count} commentaire"
+          other: "%{count} commentaires"
+        replies_count:
+          one: "%{count} réponse"
+          other: "%{count} réponses"
+        cancel: Annuler
+        publish_comment: Publier le commentaire
+      form:
+        phase_not_open: Cette phase du processus n'est pas ouverte
+        login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.
+        signin: Se connecter
+        signup: Creer son compte
+      index:
+        title: Commentaires
+        comments_about: Commentaires sur
+        see_in_context: Voir dans le contexte
+        comments_count:
+          one: "%{count} commentaire"
+          other: "%{count} commentaires"
+      show:
+        title: commentaire
+      version_chooser:
+        seeing_version: Commentaires de la version
+        see_text: Voir le projet de texte
+    draft_versions:
+      changes:
+        title: Changements
+        seeing_changelog_version: Résumé des changements de révision
+        see_text: Voir le projet de texte
+      show:
+        loading_comments: Chargement des commentaires
+        seeing_version: Consulter la révision
+        select_draft_version: Sélectionnez la version
+        select_version_submit: Afficher
+        updated_at: Mise à jour le %{date}
+        see_changes: voir le résumé des changements
+        see_comments: voir tous les commentaires
+        text_toc: Indice
+        text_body: Texte
+        text_comments: Commentaires
+    processes:
+      header:
+        view_process_information: Voir les informations sur le processus
+      proposals:
+        empty_proposals: "Il n'y a pas de propositions"
+      debate:
+        empty_questions: Pas de questions
+        participate: Faites vos contributions au débat précédent en participant aux sujets suivants.
+      header_full:
+        description: "En quoi ça consiste:"
+        more_info: Plus d'informations et de contexte
+      index:
+        filter: Filtrer
+        filters:
+          open: Processus actifs
+          next: À venir
+          past: Terminés
+        no_open_processes: Aucun processus actif
+        no_next_processes: Aucun processus prévu
+        no_past_processes: Aucun processus terminé
+        section_header:
+          icon_alt: Icon des Processus legislatifs
+          title: Processus legislatifs
+          help: Aide sur les processus legislatifs
+        section_footer:
+          title: Aide sur les processus legislatifs
+          description: Participer aux débats et aux processus avant l'approbation d'une loi ou d'une action publique. Votre avis sera pris en compte dans nos propositions au gouvernement.
+          help_text_1: "Dans les processus participatifs, nous offrons aux citoyens la possibilité de participer à la préparation et à la modification des lois qui affectent la nation et de donner leur avis sur certaines actions envisagées."
+          help_text_2: "Les personnes enregistrées dans%{org} peuvent participer avec des contributions à la consultation publique de nouvelles ordonnances, lois et directives, entre autres. Vos commentaires sont analysés par la direction correspondante et pris en compte dans nos propositions pour la rédaction finale des loi."
+          help_text_3: "Nous ouvrons également des processus pour recevoir des contributions et des opinions sur les actions publiques."
+      phase_not_open:
+        not_open: Cette phase du processus n'est pas encore ouverte
+      phase_empty:
+        empty: Aucune publication
+      process:
+        see_latest_comments: Voir les dernières contributions
+        see_latest_comments_title: Contribuer à ce processus
+      shared:
+        key_dates: Dates clées
+        debate_dates: Dates des débats
+        draft_publication_date: Projet de publication
+        allegations_dates: Argumentaires
+        result_publication_date: Publication des résultats
+        proposals_dates: dates des propositions
+    questions:
+      comments:
+        comment_button: Poster une réponse
+        comments_title: Réponses ouvertes
+        comments_closed: Phase close
+        form:
+          leave_comment: Laissez un commentaire
+      question:
+        comments:
+          zero: Aucun commentaire
+          one: "%{count} commentaire"
+          other: "%{count} commentaires"
+        debate: Débattre
+      show:
+        answer_question: Envoyer une réponse
+        next_question: Question suivante
+        first_question: Première question
+        share: Partager
+        title: Processus de législation collaboratif
+      participation:
+        phase_not_open: Cette phase n'est pas ouverte
+        organizations: Les organisations ne peuvent pas participer au débat
+        signin: se connecter
+        signup: créer un compte
+        unauthenticated: Vous devez %{signin} ou %{signup} pour participer à ce débat.
+        verified_only: Seuls les utilisateurs vérifiés peuvent participer au débat, %{verify_account}.
+        verify_account: vérifier votre compte
+        debate_phase_not_open: "La phase de débat préliminaire est déjà terminée; aucune réponse n'est acceptée en ce moment"
+    shared:
+      share: Partager
+      share_comment: Commentez la version %{version_name} du projet de processus %{process_name}
+    proposals:
+      form:
+        tags_label: "Catégories"
+      not_verified: "Pour voter sur les propositions %{verify_account}."
+      closed: "Ce processus a été fermé et ne peut plus collecter de votes."

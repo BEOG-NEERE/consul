@@ -5,12 +5,12 @@
   <div class="row">
     <div class="small-12 medium-6 large-3 column">
     <%= f.label :style, t("admin.banners.banner.style") %>
-    <%= f.select :style, options_for_select(@banner_styles, @banner.style),:include_blank => '-',
-                      label: false,placeholder: t("admin.banners.banner.style") %>
+    <%= f.select :style, options_for_select(['banner-style-one', 'banner-style-two', 'banner-style-three'], @banner.style),:include_blank => '-',
+                      label: false, placeholder: t("admin.banners.banner.style") %>
     </div>
     <div class="small-12 medium-6 large-3 column">
     <%= f.label :image, t("admin.banners.banner.image") %>
-    <%= f.select :image, options_for_select(@banner_imgs, @banner.image),:include_blank => '-',
+    <%= f.select :image, options_for_select(['banner-img-one', 'banner-img-two', 'banner-img-three'], @banner.image),:include_blank => '-',
                       label: false, placeholder: t("admin.banners.banner.image") %>
     </div>
     <% date_started_at = @banner.post_started_at.present? ? I18n.localize(@banner.post_started_at) : "" %>

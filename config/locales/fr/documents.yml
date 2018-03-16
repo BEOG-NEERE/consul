@@ -1,0 +1,23 @@
+fr:
+  documents:
+    title: Documents
+    max_documents_allowed_reached_html: 'Vous avez atteint le nombre maximum de documents autorisés! <strong> Vous devez en supprimer un avant de pouvoir en télécharger un autre.</strong>'
+    form:
+      title: Documents
+      title_placeholder: Ajouter un titre descriptif pour le document
+      attachment_label: Sélectionnez un document
+      delete_button: supprimer le document
+      note: 'Vous pouvez télécharger au maximun %{max_documents_allowed} documentos aux ormats: %{accepted_content_types}, avec une talle maximun de %{max_file_size} MB par document.'
+      add_new_document: Ajouter un nouveau document
+    actions:
+      destroy:
+        notice: Le document a été supprimé avec succès.
+        alert: Le document n'a pas pu être supprimé.
+        confirm: 'Êtes-vous sûr de vouloir supprimer le document? Cette action ne peut pas être annulée!'
+    buttons:
+      download_document: Télécharger le fichier
+      destroy_document: Supprimer le document
+    errors:
+      messages:
+        in_between: doit être entre %{min} et %{max}
+        wrong_content_type: Le type de contenu %{content_type} du fichier ne correspond à aucun des types de contenu acceptés %{accepted_content_types}

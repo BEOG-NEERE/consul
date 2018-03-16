@@ -563,6 +563,7 @@ DEPENDENCIES
   spring (~> 2.0.1)
   spring-commands-rspec (~> 1.0.4)
   sprockets (~> 3.7.1)
+  term-ansicolor (~> 1.6.0)
   turbolinks (~> 2.5.3)
   turnout (~> 2.4.0)
   uglifier (~> 4.1.2)
@@ -571,4 +572,4 @@ DEPENDENCIES
   whenever (~> 0.10.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

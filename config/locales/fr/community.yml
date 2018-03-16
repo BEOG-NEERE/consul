@@ -1,0 +1,60 @@
+fr:
+  community:
+    sidebar:
+      title: Communauté
+      description:
+        proposal: Participer à la communauté d'utilisateurs de cette proposition.
+        investment: Participer à la communauté d'utilisateurs de ce projet de dépenses.
+      button_to_access: Acceder à la communauté
+    show:
+      title:
+        proposal: Communauté de la proposition
+        investment: Communauté du budget participatif
+      description:
+        proposal: Participez à la communauté de cette proposition. Une communauté active peut aider à améliorer le contenu de la proposition et à en stimuler la diffusion pour obtenir plus de soutien.
+        investment: Participez à la communauté de ce projet de dépense. Une communauté active peut aider à améliorer le contenu du projet de dépenses ainsi qu'à en stimuler la diffusion pour obtenir plus de soutien.
+      create_first_community_topic:
+        first_theme_not_logged_in: Il n'y a pas de thème disponible, participez en créant le premier thème.
+        first_theme: Créer le premier thème de la communauté
+        sub_first_theme: "Pour créer un thème, vous devez %{sign_in} ou %{sign_up}."
+        sign_in: "Initier une session"
+        sign_up: "s'enregistrer"
+      tab:
+        participants: Participants
+      sidebar:
+        participate: Participer
+        new_topic: Créer un thème
+      topic:
+        edit: Éditer un thème
+        destroy: Eliminer le thème
+        comments:
+          zero: Zéro commentaire
+          one: 1 Commentaire
+          other: "%{count} Commentaires"
+      author: Auteur
+      back: Retourner à la %{proposal} de la %{community} 
+    topic:
+      create: Créer un thème
+      edit: Editer un thème
+      form:
+        topic_title: Title
+        topic_text: Texte initial
+        new:
+          submit_button: Créer un thème
+        edit:
+          submit_button: Enregistrer les modifications
+        create:
+          submit_button: Créer le thème
+        update:
+          submit_button: Mettre à jour
+      show:
+        tab:
+          comments_tab: Commentaires
+      sidebar:
+        recommendations_title: Recommandations pour créer un thème
+        recommendation_one: N'écrivez pas le titre du thème ou des phrases entières en majuscules. Sur Internet ceci est considéré comme crier. Et personne n'aime être crié dessus.
+        recommendation_two: Tout sujet ou commentaire impliquant une action illégale sera éliminé, y compris ceux qui ont l'intention de saboter les espaces du thème, tout le reste est autorisé.
+        recommendation_three: Profitez de cet espace, des voix qui le remplissent, c'est aussi le vôtre
+  topics:
+    show:
+      login_to_comment: Vous devez %{signin} ou %{signup} pour laisser un commentaire.

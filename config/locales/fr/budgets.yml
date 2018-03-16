@@ -28,15 +28,37 @@ fr:
         unselected_title: Investissements non-sélectionnés pour la phase de vote
         unselected: Voir les investissements non-sélectionnés pour la phase de vote
     phase:
+      drafting: Initiation (Invisible au public)
+      informing: Informations
       accepting: Présentation des projets
       reviewing: Revue interne des projets
       selecting: Phase de sélection
       valuating: Évaluation des projets
+      publishing_prices: Revision des coûts
       balloting: Vote final
       reviewing_ballots: Clôture des votes
       finished: Résultats
     index:
       title: Budgets participatifs
+      section_header:
+        icon_alt: Icon de budgets participatifs
+        title: Budgets participatifs
+        help: Aide sur les budgets participatifs
+        all_phases: Afficher toutes les phases
+      all_phases: Phases du budget participatif
+      map: Projets géographiquement localisables
+      investment_proyects: Voir la liste complète des projets de dépenses
+      unfeasible_investment_proyects: Voir la liste des projets de dépenses non viables
+      not_selected_investment_proyects: Voir la liste des projets de dépenses non sélectionnés pour le vote final
+      finished_budgets: Budgets participatifs complétés
+      see_results: Voir les résultats
+      section_footer:
+        title: Aide sur la budgétisation participative
+        description: Avec les budgets participatifs, les citoyens décident de quels projets proposés par les citoyens, une partie du budget national sera destinée.
+        help_text_1: "Les budgets participatifs sont des processus dans lesquels les citoyens décident directement de la partie du budget national à dépenser. Toute personne inscrite âgée de plus de 16 ans peut proposer un projet de dépenses présélectionné dans une phase de soutien citoyen."
+        help_text_2: "Les projets les plus votés sont évalués et transmis à un vote final à l'issu duquel les actions seront identifiées et proposées au législateur pour abrobation dans le budget national."
+        help_text_3: "La présentation des projets de budgétisation participative est réalisée depuis janvier et sur une période d'environ un mois et demi. Pour participer et faire des propositions pour tout le pays et / ou une commune, vous devez vous inscrire dans %{org} et vérifier votre compte."
+        help_text_4: "Pour obtenir autant de soutiens et de votes que possible, choisissez un titre descriptif et compréhensible de votre projet. Ensuite, vous avez un espace pour développer l'approche de votre proposition. Celle-ci fournit toutes les données et explications, et même des documents et des images, pour aider les autres participants à mieux comprendre ce que vous proposez."
     investments:
       form:
         tag_category_label: "Catégories"

@@ -3,10 +3,10 @@ fr:
     census_terms: Pour confirmer ce compte, vous devez être âgé(e) de 16 ans ou plus, et avoir été recensé avec les données indiquées ci-dessus, lesquelles seront vérifiées. En acceptant le processus de vérification, vous donnez également votre consentement au recoupement de cette information, ainsi que les moyens de communication qui figurent dans ce fichier. Les données fournies seront intégrées et traitées dans le fichier indiqué dans les conditions d'utilisations du portail.
     conditions: Conditions d'utilisation
     general_terms: Conditions générales
-    more_info:
-      title: "Découvrez %{org_name}"
+    help:
+      title: "Découvrez %{org}"
       subtitle: "Découvrez tout ce qu'il est possible de faire avec ce site"
-      guide: 'Ce guide explique chaque section de %{org_name}. Vous pouvez avoir plus d''information dans les liens ''Informations détaillées''.'
+      guide: 'Ce guide explique chaque section de %{org}. Vous pouvez avoir plus d''information dans les liens ''Informations détaillées''.'
       menu:
         debates: "Débats"
         proposals: "Propositions"
@@ -15,43 +15,55 @@ fr:
       debates:
         title: "Débats"
         description: "Créer un fil de discussion où vous pouvez aborder tous sujets que vous souhaitez partager avec d'autres personnes de votre ville."
+        link: "debates ciudadanos"
+        feature_link: "registrarte en %{org}"
         feature_1: "Pour créer un débat, vous devez %{link}"
-        feature_1_link: "vous inscrire sur %{org_name}"
-        feature_2_html: "Les débats peuvent être notés en utilisant les boutons <strong>Je suis d'accord</strong> ou <strong>Je ne suis pas d'accord</strong> que vous trouverez dans chacun d'eux."
+        feature_link: "vous inscrire sur %{org}"
+        feature_html: "Les débats peuvent être notés en utilisant les boutons <strong>J'adhère</strong> ou <strong>Je ne suis pas d'accord</strong> que vous trouverez dans chacun d'eux."
         image_alt: "Boutons pour noter les débats"
-        figcaption: 'Les boutons ''Je suis d''accord'' et ''Je ne suis pas d''accord'' pour noter les débats.'
+        figcaption: 'Les boutons ''J''adhère'' et ''Je ne suis pas d''accord'' pour noter les débats.'
       proposals:
         title: "Propositions"
         description: "Faites une proposition sur ce que vous souhaitez que la mairie entreprenne et soutenez les propositions d'autres personnes."
-        feature_1: "Pour créer une proposition, vous devez %{link}. De plus, pour les supporter, vous devez avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
+        feature_html: "Pour créer une proposition, vous devez %{link}. De plus, pour les supporter, vous devez avoir un compte vérifié."
+        link: "Propositions citoyennes"
+        feature_link: "inscrivez-vous sur %{org}"
         feature_2_html: "Les propositions qui auront <strong>le support d'1% des personnes</strong> seront soumises au vote."
-        feature_3_html: "S'il y a plus de personnes qui sont en faveur que contre, <strong>la mairie publiera son plan pour accomplir</strong> cette proposition et vous pourrez suivre son avancement."
+        feature_3_html: "S'il y a plus de personnes qui sont en faveur que contre, <strong> BEOG NEERE prendra en compte</strong> cette proposition qu'elle somettra au gouvernement ou à la mairie."
         image_alt: "Bouton pour supporter une proposition"
         figcaption_html: 'Bouton pour "Supporter" une proposition.<br>Quand le nombre de supports requis est atteint, elle sera soumise au vote.'
       budgets:
         title: "Budgets participatifs"
-        description: "Les premiers six mois de chaque année, vous pouvez décider comment investir une partie du budget."
-        feature_1: "Pour soumettre un projet d'investissement, vous devez %{link} et avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
-        feature_2_html: "En premier, il y a la <strong>phase de soumission</strong> des projets d'investissement."
-        feature_3_html: "Ensuite, il y a la <strong>phase de support</strong> pour prioriser les projets les plus intéressants. Ceux avec le plus de support seront évalués par la Ville pour établir s'ils sont viables et combien ils valent."
-        feature_4_html: "Enfin, il y a la <strong>phase de vote</strong> où vous décidez des projets pour lesquels dépenser le budget."
-        image_alt: "Différentes phases d'un budget participatif"
-        figcaption_html: '"Phase de support" et "phase de vote" des budgets participatifs.'
+        description: "La section %{link} est utile pour que les gens puissent décider directement quelle partie du budget municipal va aller."
+        link: "budgets participatifs"
+        Caractéristique: "Dans ce processus, chaque année, les gens soulèvent, soutiennent et votent sur des projets, et les plus votés sont financés par le budget."
+        phase_1_html: "Entre janvier et début mars, les personnes enregistrées dans %{org} peuvent <strong> soumettre des projets </strong>."
+        phase_2_html: "En mars, les promoteurs doivent être soutenus, par <strong> phase de présélection </ strong>."
+        phase_3_html: "Entre le mois d'avril et le début du mois de mai, un conseil d'experts du budget <strong> évaluent les projets </strong> dans l'ordre du plus faible au plus soutenu et vérifient qu'ils sont viables."
+        phase_4_html: "Enfin, entre mai et juin, tous les citoyens peuvent <strong> voter sur les projets </ strong> qui les intéressent le plus."
+        phase_5_html: "Dès l'approbation des budgets l'année suivante, BEOG NEERE soumet les projets gagnants aux autorités compétantes pour considération"
+        image_alt: "Les différentes phases d'un budget participatif"
+        figcaption_html: 'Phase de "Supports" et phase "Vote" des budgets participatifs.'
       polls:
         title: "Votes"
         description: "Les propositions des citoyens ayant atteint un support de 1% seront soumises au vote."
         feature_1: "Pour participer au prochain vote, vous devez %{link} et avoir un compte vérifié."
-        feature_1_link: "inscrivez-vous sur %{org_name}"
+        feature_1_link: "inscrivez-vous sur %{org}"
         feature_2: "Tous les utilisateurs vérifiés âgés de 16 ans ou plus peuvent voter."
         feature_3: "Les résultats de tous les votes sont contractuels pour le gouvernement."
+      processes:
+        title: "Processus législatifs"
+        description: "Dans la section %{link}, les citoyens participent à l'élaboration et à la modification des règlements qui affectent la ville et peuvent donner leur avis sur les politiques municipales dans les débats précédents."
+        link: "processus législatifs"
+        feature: "Pour participer à un processus, vous devez %{sign_up} et consultez la page %{link} périodiquement pour savoir quels règlements et politiques sont discutés et consultés."
+        sign_up: "créer votre compte dans %{org}"
       faq:
         title: "Problèmes techniques ?"
         description: "Lisez la FAQ et trouvez la réponse à vos questions."
         button: "Voir les questions fréquemment posées"
       other:
-        how_to_use: "Utiliser %{org_name} dans votre ville"
+        title: "Autres informations d'intérêt"
+        how_to_use: "Utiliser %{org} dans votre commune"
       how_to_use:
         text: |-
           Utilisez le librement pour votre gouvernement ou aider nous à l'améliorer, c'est un logiciel libre.
@@ -59,5 +71,17 @@ fr:
           Ce portail de Gouvernement Ouvert utilise l'[application Consul](https://github.com/consul/consul 'consul github') qui est un logiciel libre, sous [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), ce qui, en quelques mots, signifie que tout le monde peut utiliser le code librement, le copier, le voir en détail, le modifier et le redistribuer avec ces modifications (permettant à d'autres d'en faire de même). Car nous pensons que la culture est meilleure et plus riche quand elle est libre.
           
           Si vous êtes un développeur, vous pouvez voir le code et nous aider à l'améliorer en allant sur l'[applicationConsul](https://github.com/consul/consul 'consul github').
+      titles:
+        how_to_use: Utilisez %{org} dans votre commune
+        accessibility: Accessibilité
+        conditions: "Conditions d'utilisation"
+        help: "C'est quoi %{org}? - La participation citoyenne"
+        privacy: Politique de confidentialité 
+    titles:
+      how_to_use: Utilisez %{org} dans votre commune
+      accessibility: Accessibilité
+      conditions: "Conditions d'utilisation"
+      help: "C'est quoi %{org}? - La participation citoyenne"
+      privacy: Politique de confidentialité       
     verify:
       email: Email

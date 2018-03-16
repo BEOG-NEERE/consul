@@ -23,9 +23,13 @@ COPY Gemfile.lock Gemfile.lock
 COPY Gemfile_custom Gemfile_custom
 
 # Prevent bundler warnings; ensure that the bundler version executed is >= that which created Gemfile.lock
-RUN gem install bundler
+# RUN gem uninstall bundler
+# RUN export PATH="$PATH:/usr/bin:/usr/local/bin/"
+# RUN gem install bundler
 
 # Finish establishing our Ruby enviornment
+RUN mkdir -p /usr/lib/ruby/gems/2.3.0/gems/bundler-1.16.1/exe/
+RUN ln -s /var/lib/gems/2.3.0/gems/bundler-1.16.1/exe/bundle /usr/lib/ruby/gems/2.3.0/gems/bundler-1.16.1/exe/
 RUN bundle install --full-index
 
 # Copy the Rails application into place

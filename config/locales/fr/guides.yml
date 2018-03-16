@@ -1,0 +1,18 @@
+fr:
+  guides:
+    title: "Avez-vous une idée pour %{org}?"
+    subtitle: "Choisissez ce que vous voulez créer"
+    budget_investment:
+      title: "Un projet de dépense"
+      feature_1_html: "Ce sont des idées pour dépenser une partie du <strong> budget communal/national </ strong>"
+      feature_2_html: "Les projets de dépenses sont recoltés <strong> entre janvier et mars </ strong>"
+      feature_3_html: "S'il reçoit un soutien, c'est une projet viable et municipal, il passera aux votes"
+      feature_4_html: "Si les citoyens approuvent les projets, ils deviennent réalité"
+      new_button: Je veux créer un projet de dépense
+    proposition:
+        title: "Une proposition citoyenne"
+        feature_1_html: "Ce sont des idées sur toute action que le conseil communal peut entreprendre"
+        feature_2_html: "Ils ont besoin de <strong> %{votes} entrez </ strong> dans %{org} pour voter"
+        feature_3_html: "Activer à tout moment, vous avez <strong> un an </ strong> pour reccueillir des soutiens"
+        feature_4_html: "Si elle est approuvée lors d'un vote, le conseil communal accepte la proposition"
+        new_button: Je veux créer une proposition

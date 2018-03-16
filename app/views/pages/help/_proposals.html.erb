@@ -11,7 +11,15 @@
       <li>
         <%= t("pages.help.proposals.feature_html",
               org: setting['org_name'],
-              supports: setting['votes_for_proposal_success']).html_safe %>
+              supports: setting['votes_for_proposal_success'], 
+              link: link_to(t("pages.help.proposals.link"),
+                              proposals_path)).html_safe %>
+      </li>
+      <li>
+        <%= t("pages.help.proposals.feature_2_html").html_safe %>
+      </li>
+      <li>
+        <%= t("pages.help.proposals.feature_3_html").html_safe %>
       </li>
     </ul>
 
