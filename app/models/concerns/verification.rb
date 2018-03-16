@@ -10,32 +10,37 @@ module Verification
     scope :incomplete_verification, -> { where("(users.residence_verified_at IS NULL AND users.failed_census_calls_count > ?) OR (users.residence_verified_at IS NOT NULL AND (users.unconfirmed_phone IS NULL OR users.confirmed_phone IS NULL))", 0) }
   end
 
+  def override(value)
+    return true if Setting["feature.user.override_verification"] == 'active'
+    value
+  end
+
   def verification_email_sent?
-    email_verification_token.present?
+    override(email_verification_token.present?)
   end
 
   def verification_sms_sent?
-    unconfirmed_phone.present? && sms_confirmation_code.present?
+    override(unconfirmed_phone.present? && sms_confirmation_code.present?)
   end
 
   def verification_letter_sent?
-    letter_requested_at.present? && letter_verification_code.present?
+    override(letter_requested_at.present? && letter_verification_code.present?)
   end
 
   def residence_verified?
-    residence_verified_at.present?
+    override(residence_verified_at.present?)
   end
 
   def sms_verified?
-    confirmed_phone.present?
+    override(confirmed_phone.present?)
   end
 
   def level_two_verified?
-    level_two_verified_at.present? || (residence_verified? && sms_verified?)
+    override(level_two_verified_at.present? || (residence_verified? && sms_verified?))
   end
 
   def level_three_verified?
-    verified_at.present?
+    override(verified_at.present?)
   end
 
   def level_two_or_three_verified?

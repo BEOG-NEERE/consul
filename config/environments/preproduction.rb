@@ -66,6 +66,19 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
   config.action_mailer.asset_host = "https://#{Rails.application.secrets.server_name}"
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings = {
+      :address              => '184.173.153.202',
+      :port                 => 2525,
+      :domain               => 'sandbox8e5823ea267d49f6b6ae3ab5520172cb.mailgun.org',
+      :user_name            => 'contact@beog-neere.org',
+      :password             => 'contact@beog123',
+      :authentication => :plain,
+      :enable_starttls_auto => true,
+      :ssl => false
+  }
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
