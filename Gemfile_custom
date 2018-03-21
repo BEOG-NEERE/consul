@@ -2,4 +2,9 @@
 # Read more on documentation: 
 # * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#gemfile
 # * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#gemfile
-#
+gem 'rails_12factor'
+gem 'puma'
+ruby '2.3.6'
+group :development, :test do
+  gem 'dotenv-rails', '~> 2.2.1'
+end
